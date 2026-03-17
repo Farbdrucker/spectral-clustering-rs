@@ -73,6 +73,27 @@ Recommended settings by image size:
 
 Outputs written to `--output` directory: `eigvec_00.png` … `eigvec_k.png`, `summary.png`, `timing.json`.
 
+## GUI Parameter Tuner
+
+A native desktop GUI for exploring how parameters affect segmentation in real time.
+
+```bash
+cargo run --release --bin gui
+```
+
+Open any image with **Open Image…**, then adjust parameters — masks update automatically after each change.
+
+| Control | Range | Description |
+|---------|-------|-------------|
+| σ color | 0.001 – 0.5 | Colour bandwidth (logarithmic slider) |
+| σ space | 0.001 – 1.0 | Spatial bandwidth (logarithmic slider) |
+| Max side | 16 – 256 px | Downscale before processing |
+| Pipeline | Classic / ACA | Algorithm variant |
+| Affinity | Dense / Knn / Nystrom | Similarity method (Classic only) |
+| Eigensolver | Full / PowerIter / Lanczos | Solver (Classic only) |
+
+Segmentation runs on a background thread; the UI stays responsive while computing. The newest parameters always win — rapid slider drags drop intermediate results.
+
 ## Test
 
 ```bash
