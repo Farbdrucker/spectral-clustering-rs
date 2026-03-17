@@ -5,6 +5,10 @@
 ![License: MIT](https://img.shields.io/badge/license-MIT-blue)
 ![nalgebra](https://img.shields.io/badge/nalgebra-0.32-lightgrey)
 
+This project is a fully vibe coded re-erection of my master thesis _Comparison of Eigenvalue Algorithms for the Graph Laplcian with Application to Semi-Supervised Learning_
+
+---
+
 Spectral image segmentation in Rust. Represents an image as a weighted pixel-similarity graph, computes eigenvectors of the normalised graph Laplacian, and renders their sign patterns as binary segmentation masks.
 
 ## Algorithms
