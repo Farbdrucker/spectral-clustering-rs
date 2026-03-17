@@ -1,5 +1,9 @@
 # spectral-clustering-rs
 
+![Rust](https://img.shields.io/badge/rust-2021-orange?logo=rust)
+![License: MIT](https://img.shields.io/badge/license-MIT-blue)
+![nalgebra](https://img.shields.io/badge/nalgebra-0.32-lightgrey)
+
 Spectral image segmentation in Rust. Represents an image as a weighted pixel-similarity graph, computes eigenvectors of the normalised graph Laplacian, and renders their sign patterns as binary segmentation masks.
 
 ## Algorithms
