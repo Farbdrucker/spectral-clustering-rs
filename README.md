@@ -85,3 +85,22 @@ Sweeps eigensolver, similarity, and ACA rank parameters across synthetic images 
 ```bash
 cargo run --release --bin benchmark
 ```
+
+## Examples
+
+```
+cargo run --release --bin spectral_segment \
+-- \
+--input examples/image.png \
+--output out/ \
+--max-side 128 \
+--pipeline aca \
+--num-eigenvectors 4 \
+--sigma-color 0.015 \
+--sigma-space 0.5 \
+--aca-max-rank 15
+```
+
+## Benchmarks
+
+See the [results](https://github.com/Farbdrucker/spectral-clustering-rs/blob/main/benchmark/macbook_air_m2_16gb.txt) of the benchmarks running on my local develop machine
