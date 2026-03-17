@@ -82,6 +82,7 @@ pub struct AcaParams {
     /// σ² for spatial (XY) distance component of the kernel.
     pub sigma_space_sq: f64,
     /// Number of eigenpairs to return (including the trivial λ≈0 one).
+    #[allow(dead_code)]
     pub k: usize,
 }
 
@@ -94,6 +95,7 @@ pub struct AcaParams {
 /// Returns `(eigenvalues, eigenvectors)` sorted ascending by eigenvalue of L.
 /// Eigenvalues of L are computed as  λ_L = 1 − λ_B  where λ_B are eigenvalues
 /// of  B = D^{-½} W D^{-½}.
+#[allow(dead_code)]
 pub fn aca_eigenpairs(feats: &[f64], n: usize, params: &AcaParams) -> EigenPairs {
     let a = aca_factor(feats, n, params);
     if a.nrows() == 0 {

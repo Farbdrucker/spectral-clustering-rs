@@ -367,7 +367,7 @@ fn main() -> anyhow::Result<()> {
         "render::spectrum",
         format!("{} eigvec images + summary", pairs.len()),
         || -> anyhow::Result<()> {
-            for (i, (val, vec)) in pairs.iter().enumerate() {
+            for (i, (_val, vec)) in pairs.iter().enumerate() {
                 render_sign_image(vec, w, h)
                     .save(args.output.join(format!("eigvec_{:02}.png", i)))?;
             }

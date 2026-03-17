@@ -101,6 +101,7 @@ pub struct ConvSplitResult {
     /// Final pixel-space solution u ∈ [-1, +1]^N (approximately).
     pub u: DVector<f64>,
     /// Initial spectral projection  a₀ = Φᵀ u₀.
+    #[allow(dead_code)]
     pub a0: DVector<f64>,
     /// Number of iterations actually performed.
     pub iters: usize,
@@ -215,7 +216,6 @@ pub fn conv_splitting(
 
             if final_residual < params.tol {
                 iters = iter;
-                a = a_new;
                 u = u_new;
                 break;
             }

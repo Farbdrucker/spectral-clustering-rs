@@ -115,6 +115,7 @@ impl Timer {
     }
 
     /// All recorded entries in execution order.
+    #[allow(dead_code)]
     pub fn entries(&self) -> &[TimingEntry] {
         &self.entries
     }
