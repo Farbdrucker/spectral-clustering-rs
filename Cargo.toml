@@ -7,6 +7,14 @@ edition = "2021"
 name = "spectral_segment"
 path = "src/main.rs"
 
+[lib]
+name = "spectral_segment"
+path = "src/lib.rs"
+
+[[bin]]
+name = "benchmark"
+path = "src/bin/benchmark.rs"
+
 [dependencies]
 image = "=0.24.9"
 nalgebra = "=0.32.6"
