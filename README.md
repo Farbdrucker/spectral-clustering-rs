@@ -1,5 +1,6 @@
 # spectral-clustering-rs
 
+![CI](https://github.com/Farbdrucker/spectral-clustering-rs/actions/workflows/ci.yml/badge.svg)
 ![Rust](https://img.shields.io/badge/rust-2021-orange?logo=rust)
 ![License: MIT](https://img.shields.io/badge/license-MIT-blue)
 ![nalgebra](https://img.shields.io/badge/nalgebra-0.32-lightgrey)
