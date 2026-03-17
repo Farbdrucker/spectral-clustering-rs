@@ -97,11 +97,11 @@ cargo run --release --bin spectral_segment \
 -- \
 --input examples/image.png \
 --output out/ \
---max-side 128 \
+--max-side 48 \
 --pipeline aca \
 --num-eigenvectors 4 \
---sigma-color 0.015 \
---sigma-space 0.5 \
+--sigma-color 0.06 \
+--sigma-space 0.11 \
 --aca-max-rank 15
 ```
 
